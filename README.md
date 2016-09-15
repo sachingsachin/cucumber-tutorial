@@ -21,6 +21,7 @@ Cucumber uses [Gherkin](https://github.com/cucumber/cucumber/wiki/Gherkin) for w
 3. [tutorial-3](./tutorial-3): Hello world of Cucumber integrated with Junit
 4. [tutorial-4](./tutorial-4): Get to know the meaning of Cucumber keywords and some cool options to make output more palatable.
 5. [tutorial-5](./tutorial-5): Passing arguments from feature-files to methods bound to them.
+6. [tutorial-6](./tutorial-6): Scenario Outline - Collapsing multiple scenarios into one to reduce reading burden.
 
 
 # Gherkin corner
