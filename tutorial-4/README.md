@@ -79,6 +79,8 @@ Some plugins (like the `html` plugin) take a directory instead of an output-file
 If you do not specify any output-file (like the `pretty` plugin), then it outputs on the console.
 
 
+# Run results
+
 ```bash
 mvn clean test
 
