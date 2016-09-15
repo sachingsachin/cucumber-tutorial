@@ -13,7 +13,9 @@ We have extended the CucumberOptions with a plugin attribute.
 ```java
 @CucumberOptions(
     plugin = {"pretty",
-              "html:target/cucumber"
+              "html:target/cucumber",
+              "rerun:target/cucumber/rerun.txt",
+              "usage:target/cucumber/usage.txt"
         },
     features="src/test/resources"
 )
@@ -48,9 +50,34 @@ java -cp target/cucumber-tutorial-1.0.0-SNAPSHOT.jar cucumber.api.cli.Main . --h
 #
 ```
 
-The first plugin-option "pretty" helps to print the tests as they are run with coloring.
+## pretty
 
+The first plugin-option "pretty" helps to print the tests as they are run with coloring.
 Hence it looks very nice on the console.
+
+## html:target/cucumber
+
+This helps in the generation of `target/cucumber/index.html` which contains a nice summary
+of the tests and can be viewed in a browser.
+
+## rerun:target/cucumber/rerun.txt
+
+If some scenarios fail, this plugin outputs their location.
+You can then just copy/paste the output to rerun only those scenarios.
+
+
+## usage:target/cucumber/usage.txt
+
+Shows the time spent by each step.
+Useful to hunt down slow steps.
+
+
+## Format of specifying a plugin
+
+Plugins like the above use the format `plugin-name:output-file`
+Some plugins (like the `html` plugin) take a directory instead of an output-file.
+If you do not specify any output-file (like the `pretty` plugin), then it outputs on the console.
+
 
 ```bash
 mvn clean test
@@ -93,10 +120,6 @@ mvn clean test
 #
 # Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.334 sec
 ```
-
-Second option is that of `html:target/cucumber` which helps in the generation of `target/cucumber/index.html`
-
-This html contains a nice summary of the tests and can be viewed in a browser.
 
 
 # The keywords Given, When, Then etc have no specific meaning.
