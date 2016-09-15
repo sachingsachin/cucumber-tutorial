@@ -12,7 +12,8 @@ import cucumber.api.junit.Cucumber;
               "rerun:target/cucumber/rerun.txt",
               "usage:target/cucumber/usage.txt"
         },
-    features="src/test/resources"
+    features="src/test/resources",
+    snippets=SnippetType.CAMELCASE
 )
 public class RunCukesTest {
 }
