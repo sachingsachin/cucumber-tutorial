@@ -23,7 +23,7 @@ We have extended the CucumberOptions with a plugin attribute.
 
 The documentation to specify the same is very sparse again.
 
-One way it to look inside the `--help` section as shown in [tutorial-2](../tutorial-2)
+One way is to look inside the `--help` section as shown in [tutorial-2](../tutorial-2) (needs a shaded jar file)
 
 ```
 java -cp target/cucumber-tutorial-1.0.0-SNAPSHOT.jar cucumber.api.cli.Main . --help

@@ -40,11 +40,11 @@ This is the most important part.
 
 Each of your step-definition and the scenario is considered a test in itself !
 
-It might be a surprise for people coming from Junit or other backhrounds.
+It might be a surprise for people coming from Junit or other backgrounds.
 
 Even the steps correspodning to `Given` statements are considered a test and their count is included in the final count.
 
 Personally, I think this is a bit of a mis-representation because I am not really testing
 anything with the `Given` statements and several `And` statements. But that is how it is.
-
+And in the next tutorial, you will see why that is so.
 
