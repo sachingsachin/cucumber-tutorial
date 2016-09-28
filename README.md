@@ -22,6 +22,7 @@ Cucumber uses [Gherkin](https://github.com/cucumber/cucumber/wiki/Gherkin) for w
 4. [tutorial-4](./tutorial-4): Get to know the meaning of Cucumber keywords and some cool options to make output more palatable.
 5. [tutorial-5](./tutorial-5): Passing arguments, lists, maps and tables from feature-files to methods bound to them.
 6. [tutorial-6](./tutorial-6): Scenario Outline - Collapsing multiple scenarios into one to reduce reading burden.
+7. [tutorial-7](./tutorial-7): Managing Dependency Injection (DI) with cucumber-picocontainer.
 
 
 # Gherkin corner
